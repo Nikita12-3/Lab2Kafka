@@ -27,7 +27,7 @@ public class KafkaProducerDoctor {
             String doctorDtoJson = objectMapper.writeValueAsString(doctorDTO);
             kafkaTemplate.send(doctorsTopic, key, doctorDtoJson);
         } catch (JsonProcessingException e) {
-            log.error("Произошла JsonProcessingException1");
+            log.error("Произошла JsonProcessingExceptionDoctor");
             return false;
         }
         return true;

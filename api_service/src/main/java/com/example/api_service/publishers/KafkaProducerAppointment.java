@@ -27,7 +27,7 @@ public class KafkaProducerAppointment {
             String appointmentDTOJson = objectMapper.writeValueAsString(appointmentDTO);
             kafkaTemplate.send(appointmentsTopic, key, appointmentDTOJson);
         } catch (JsonProcessingException e) {
-            log.error("Произошла JsonProcessingException2");
+            log.error("Произошла JsonProcessingExceptionAppointment");
             return false;
         }
         return true;
