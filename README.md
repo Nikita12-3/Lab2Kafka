@@ -22,3 +22,9 @@ curl -X GET http://localhost:8080/api/reports/by-doctor
 
 Получить статистику к какому специалисту сколько записей:
 curl -X GET http://localhost:8080/api/reports/by-speciality
+
+Получить всех врачей:
+curl -X GET http://localhost:8080/api/doctors
+
+Получить все записи:
+curl -X GET http://localhost:8080/api/appointments
