@@ -1,6 +1,6 @@
 Установка
 1. Клонируйте репозиторий:
-   git clone https://github.com/Nikita12-3/lab1DockerTodoList.git
+   git clone https://github.com/Nikita12-3/Lab2Kafka.git
 2. docker-compose up --build
 
 Работа:
